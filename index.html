@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Math Quiz</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Preguntas estilo Duolingo con expresiones matemáticas en LaTeX</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Math Quiz</h1>
-		<form method="post" action="submit.php">
-			<div class="question">
-				<p>What is the sum of the following expression: $2x^2 + 3x - 4$ and $4x^2 - 2x + 1$?</p>
-				<div class="options">
-					<label><input type="radio" name="answer" value="a"> $6x^2 + x - 3$</label><br>
-					<label><input type="radio" name="answer" value="b"> $6x^2 + x - 5$</label><br>
-					<label><input type="radio" name="answer" value="c"> $6x^2 + x + 3$</label><br>
-				</div>
-			</div>
-			<button type="submit">Submit</button>
-		</form>
-	</div>
-</body>
-</html>
-
-        MathJax = {
-            tex: {
-                inlineMath: [['$$','$$']],
-                displayMath: [['$$','$$']],
-                processEscapes: true,
-                processEnvironments: true,
-                packages: ['base', 'color', 'ams']
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
+  <div class="container">
+    <h1>Preguntas estilo Duolingo con expresiones matemáticas en LaTeX</h1>
+    <div class="question">
+      <h2>¿Cuál es el resultado de la siguiente expresión?</h2>
+      <p>\(\frac{3x + 2}{x - 1} = 2\)</p>
+      <form method="post" action="submit.php">
+        <input type="hidden" name="question_id" value="1">
+        <input type="text" name="answer">
+        <input type="submit" value="Enviar respuesta">
+      </form>
+    </div>
+    <div class="question">
+      <h2>¿Cuál es el resultado de la siguiente operación matricial?</h2>
+      <p>\(\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \begin{bmatrix} 5 \\ 6 \end{bmatrix}\)</p>
+      <form method="post" action="submit.php">
+        <input type="hidden" name="question_id" value="2">
+        <input type="text" name="answer">
+        <input type="submit" value="Enviar respuesta">
+      </form>
+    </div>
+  </div>
 </body>
 </html>
