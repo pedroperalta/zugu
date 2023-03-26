@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Preguntas estilo Duolingo con expresiones matemáticas en LaTeX</title>
+  <title>Preguntas estilo Duolingo con expresiones matemáticas en LaTeX y retroalimentación</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Preguntas estilo Duolingo con expresiones matemáticas en LaTeX</h1>
+    <h1>Preguntas estilo Duolingo con expresiones matemáticas en LaTeX y retroalimentación</h1>
     <div class="question">
       <h2>¿Cuál es el resultado de la siguiente expresión?</h2>
       <p>\(\frac{3x + 2}{x - 1} = 2\)</p>
       <form method="post" action="submit.php">
         <input type="hidden" name="question_id" value="1">
-        <input type="text" name="answer">
+        <input type="radio" name="answer" value="a"><label>\(x = 4\)</label><br>
+        <input type="radio" name="answer" value="b"><label>\(x = 2\)</label><br>
+        <input type="radio" name="answer" value="c"><label>\(x = -2\)</label><br>
+        <input type="radio" name="answer" value="d"><label>No hay solución real</label><br>
         <input type="submit" value="Enviar respuesta">
       </form>
     </div>
@@ -24,7 +27,10 @@
       <p>\(\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \begin{bmatrix} 5 \\ 6 \end{bmatrix}\)</p>
       <form method="post" action="submit.php">
         <input type="hidden" name="question_id" value="2">
-        <input type="text" name="answer">
+        <input type="radio" name="answer" value="a"><label>\(\begin{bmatrix} 17 \\ 39 \end{bmatrix}\)</label><br>
+        <input type="radio" name="answer" value="b"><label>\(\begin{bmatrix} 16 \\ 39 \end{bmatrix}\)</label><br>
+        <input type="radio" name="answer" value="c"><label>\(\begin{bmatrix} 16 \\ 38 \end{bmatrix}\)</label><br>
+        <input type="radio" name="answer" value="d"><label>\(\begin{bmatrix} 17 \\ 38 \end{bmatrix}\)</label><br>
         <input type="submit" value="Enviar respuesta">
       </form>
     </div>
