@@ -1,0 +1,35 @@
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.question {
+	margin-bottom: 20px;
+}
+
+.options {
+	margin-top: 10px;
+	text-align: left;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+button[type="submit"] {
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.2rem;
+	border: none;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #27ae60;
+}
