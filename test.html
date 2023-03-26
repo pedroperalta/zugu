@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Titulo del sitio</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+    <div class="pregunta">
+        <h2>Pregunta 1</h2>
+        <p>¿Cuál es el resultado de la siguiente operación matemática?</p>
+        <p>$$2x^2 + 3x + 5 = 0$$</p>
+        <ul>
+            <li><input type="radio" name="respuesta1" value="a"><label for="respuesta1">a) $$x = \frac{-3 \pm \sqrt{3^2-4(2)(5)}}{2(2)}$$</label></li>
+            <li><input type="radio" name="respuesta1" value="b"><label for="respuesta1">b) $$x = \frac{-3 \pm \sqrt{3^2-4(2)(-5)}}{2(2)}$$</label></li>
+            <li><input type="radio" name="respuesta1" value="c"><label for="respuesta1">c) $$x = \frac{-3 \pm \sqrt{3^2-4(2)(-3)}}{2(2)}$$</label></li>
+        </ul>
+    </div>
+    <div class="pregunta">
+        <h2>Pregunta 2</h2>
+        <p>¿Cuál es la ecuación de la recta que pasa por los puntos $(2,3)$ y $(4,5)$?</p>
+        <ul>
+            <li><input type="radio" name="respuesta2" value="a"><label for="respuesta2">a) $$y = \frac{2}{3}x + \frac{5}{3}$$</label></li>
+            <li><input type="radio" name="respuesta2" value="b"><label for="respuesta2">b) $$y = \frac{2}{3}x + \frac{7}{3}$$</label></li>
+            <li><input type="radio" name="respuesta2" value="c"><label for="respuesta2">c) $$y = \frac{2}{3}x + \frac{3}{5}$$</label></li>
+        </ul>
+    </div>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$$','$$']],
+                displayMath: [['$$','$$']],
+                processEscapes: true,
+                processEnvironments: true,
+                packages: ['base', 'color', 'ams']
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+</body>
+</html>
